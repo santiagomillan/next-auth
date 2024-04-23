@@ -11,6 +11,7 @@ export default function ButtonAuth() {
   }
 
   if (session) {
+    console.log(session);
     return (
       <>
         Signed in as {session.user?.email} <br />
