@@ -22,9 +22,8 @@ const handler = NextAuth({
           }
         );
 
-        console.log("Before parsing JSON");
         const user = await res.json();
-        console.log("After parsing JSON");
+
         console.log("USER", user);
 
         if (user.error) {
